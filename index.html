@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ff416c;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sección Sobre Mí */
+        #sobre-mi {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #sobre-mi h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff416c;
+        }
+
+        #sobre-mi p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Proyectos */
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .proyecto {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .proyecto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .proyecto h3 {
+            font-size: 1.5rem;
+            padding: 10px;
+            background: #ff416c;
+            color: #fff;
+        }
+
+        .proyecto p {
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        /* Contacto */
+        #contacto {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #contacto h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff416c;
+        }
+
+        #contacto form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contacto input, #contacto textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        #contacto button {
+            padding: 10px 20px;
+            background: #ff416c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #contacto button:hover {
+            background: #e63950;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Personal</h1>
+        <p>Un espacio para compartir mis ideas y proyectos</p>
+    </header>
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy [Tu Nombre]. Este es mi espacio personal donde comparto mis ideas, proyectos y todo lo que me apasiona. Soy desarrollador web, amante del diseño creativo y siempre estoy buscando aprender algo nuevo.</p>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/400x200" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto 1. Este proyecto se enfoca en...</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/400x200" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto 2. Este proyecto destaca por...</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://via.placeholder.com/400x200" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto 3. Aquí trabajé en...</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Quieres ponerte en contacto conmigo? Llena el formulario a continuación:</p>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Mi Página Personal. Todos los derechos reservados. | Diseñado por <a href="https://github.com/marvesito" target="_blank">marvesito</a></p>
+    </footer>
+</body>
+</html>
